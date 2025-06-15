@@ -1,30 +1,19 @@
 # Quadra
 
-Aplicación web para ubicar y calificar puestos de comida callejera.
+Aplicación web para ubicar y calificar puestos de comida callejera. Permite a los usuarios registrarse, iniciar sesión, agregar ubicaciones de puestos y calificarlos, fomentando así la visibilidad de comida local.
 
-## 🚀 Tecnologías usadas
-- Python 3.x
-- Flask
-- HTML
+## 🚀 Tecnologías utilizadas
 
-## 📦 Instalación
+- Python 3.x  
+- Flask  
+- HTML  
+- SQLite  
+- Bootstrap (si estás usando estilos desde este framework)
 
-1. Clona el repositorio:
-```bash
-git clone https://github.com/TU_USUARIO/quadra.git
-cd quadra
-# Quadra
-
-Aplicación web para ubicar y calificar puestos de comida callejera.
-
-## 🚀 Tecnologías usadas
-- Python 3.x
-- Flask
-- HTML
-
-## 📦 Instalación
+## 📦 Instalación y ejecución local
 
 1. Clona el repositorio:
+
 ```bash
-git clone https://github.com/TU_USUARIO/quadra.git
+git clone https://github.com/AdrianFLG/quadra.git
 cd quadra
