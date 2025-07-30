@@ -5,10 +5,8 @@
 ## Características Principales
 
   * **Registro y Autenticación de Usuarios:** Sistema seguro de registro e inicio de sesión.
-  * **Creación de Puestos:** Los usuarios pueden añadir nuevos puestos de comida con nombre, descripción, foto y ubicación.
-  * **Calificaciones y Comentarios:** Sistema interactivo para que la comunidad califique (con estrellas) y comente en cada puesto.
-  * **Visualización Detallada:** Cada puesto tiene su propia página con toda la información y la lista de reseñas.
-
+  * **Creación de Puestos:** Los usuarios pueden añadir nuevos puestos de comida con nombre, descripción.
+  * **Calificaciones y Comentarios:** Sistema interactivo para que la comunidad califique y comente en cada puesto.
 -----
 
 ## Stack Tecnológico 💻
