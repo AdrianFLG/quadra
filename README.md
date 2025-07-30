@@ -1,19 +1,21 @@
-# Quadra
+# Nombre de Tu Proyecto
 
-Aplicación web para ubicar y calificar puestos de comida callejera. Permite a los usuarios registrarse, iniciar sesión, agregar ubicaciones de puestos y calificarlos, fomentando así la visibilidad de comida local.
+Una breve descripción de lo que hace tu aplicación. (Ej: Una plataforma para gestionar tareas diarias).
 
-## 🚀 Tecnologías utilizadas
+---
 
-- Python 3.x  
-- Flask  
-- HTML  
-- SQLite  
-- Bootstrap (si estás usando estilos desde este framework)
+## 🚀 Paqueterías Necesarias
 
-## 📦 Instalación y ejecución local
+Para ejecutar este proyecto, necesitas instalar las siguientes paqueterías. Asegúrate de tener Python y pip instalados.
 
-1. Clona el repositorio:
+(Aquí puedes listar las paqueterías de tu archivo `requirements.txt`)
 
+Ejemplo:
+- Flask
+- SQLAlchemy
+- Flask-Login
+- python-dotenv
+
+Puedes instalarlas todas ejecutando el siguiente comando:
 ```bash
-git clone https://github.com/AdrianFLG/quadra.git
-cd quadra
+pip install -r requirements.txt
