@@ -1,6 +1,6 @@
 # Quadra 🌮
 
-**Quadra** es una aplicación web full-stack diseñada para descubrir, calificar y compartir puestos de comida callejera. Los usuarios pueden geolocalizar, fotografiar y reseñar sus lugares favoritos, creando una guía comunitaria de la mejor comida de la ciudad.
+**Quadra** es una aplicación web full-stack diseñada para descubrir, calificar y compartir puestos de comida callejera. Los usuarios pueden reseñar sus lugares favoritos, creando una guía comunitaria de la mejor comida de la ciudad.
 
 ## Características Principales
 
