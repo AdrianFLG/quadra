@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>{{ title }} - Quadra</title>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="{{ url_for('main.index') }}" class="text-2xl font-bold text-orange-500">Quadra</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="{{ url_for('main.index') }}" class="text-gray-600 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                        {% if current_user.is_authenticated %}
+                            <a href="#" class="text-gray-600 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Mi Perfil</a>
+                            <a href="{{ url_for('main.logout') }}" class="text-gray-600 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Cerrar Sesión</a>
+                        {% else %}
+                            <a href="{{ url_for('main.login') }}" class="text-gray-600 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Iniciar Sesión</a>
+                            <a href="{{ url_for('main.register') }}" class="bg-orange-500 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-orange-600">Registrarse</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="max-w-4xl mx-auto py-6 sm:px-6 lg:px-8">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="p-4 mb-4 text-sm rounded-lg
+                            {% if category == 'danger' %} bg-red-100 text-red-700
+                            {% elif category == 'success' %} bg-green-100 text-green-700
+                            {% else %} bg-blue-100 text-blue-700 {% endif %}"
+                            role="alert">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+</body>
+</html>

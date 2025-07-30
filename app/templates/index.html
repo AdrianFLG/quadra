@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="text-center">
+    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+        Encuentra la mejor comida callejera
+    </h1>
+    <p class="mt-6 text-lg leading-8 text-gray-600">
+        Explora, califica y comparte los mejores puestos de comida cerca de ti.
+    </p>
+    <div class="mt-10 flex items-center justify-center gap-x-6">
+        <a href="{{ url_for('main.add_puesto') }}" class="rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-600">
+            Añadir un Puesto
+        </a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Ver mapa completo <span aria-hidden="true">→</span></a>
+    </div>
+</div>
+
+<div class="mt-10">
+    <h2 class="text-2xl font-bold mb-4">Puestos Recientes</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for puesto in puestos %}
+            <div class="bg-white shadow-lg rounded-lg p-4">
+                <h3 class="text-lg font-bold text-gray-800">{{ puesto.nombre }}</h3>
+                <p class="text-gray-600 mt-2">{{ puesto.descripcion }}</p>
+                <p class="text-sm text-gray-500 mt-4">Añadido por: {{ puesto.autor.nombre_usuario }}</p>
+            </div>
+        {% else %}
+            <p class="text-gray-500">Aún no hay puestos. ¡Sé el primero en añadir uno!</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
